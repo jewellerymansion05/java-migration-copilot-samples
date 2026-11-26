@@ -126,7 +126,7 @@ cd java-migration-copilot-samples/asset-manager
 ```
 
 **Prerequisites**: 
-- [JDK 8](https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-8): Required for running the initial application locally.
+- [JDK 17](https://learn.microsoft.com/en-us/java/openjdk/download#openjdk-17): Required for running the application locally.
 - [Maven 3.6.0+](https://maven.apache.org/install.html): Required to build the application locally.
 - [Docker](https://docs.docker.com/desktop/): Required for running the application locally.
 
