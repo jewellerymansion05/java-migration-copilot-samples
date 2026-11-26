@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Upgrade plan targeting Java 17",
+  "tasks": [
+    {
+      "type": "upgrade",
+      "id": "001-upgrade-java",
+      "description": "Upgrade the application to Java 17",
+      "requirements": "Upgrade the JDK and Java language target to Java 17. Keep framework versions and other dependencies unchanged unless changes are required to support Java 17.",
+      "skills": [
+        {
+          "name": "java-version-upgrade",
+          "location": "builtin"
+        }
+      ],
+      "successCriteria": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "passUnitTests": "true"
+      },
+      "status": "success",
+      "taskSummary": "Upgraded the application to Java 17, adjusted an AWS SDK test for JDK 17 compatibility, and verified the Maven reactor.",
+      "successCriteriaStatus": {
+        "passBuild": "true",
+        "passUnitTests": "true"
+      }
+    }
+  ],
+  "metadata": {
+    "planName": "upgrade-to-java-17",
+    "projectName": "application",
+    "language": "java",
+    "createdAt": "2026-11-26T23:57:00.890+05:00",
+    "version": "1.0"
+  }
+}
